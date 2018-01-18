@@ -1,0 +1,388 @@
+
+#banner{
+	width:100%;
+	overflow:hidden;
+	height:950px;
+	position:relative;
+}
+#banner:before{
+	content:"";
+	display:table;
+}
+
+#banner>div{
+	width:500%;
+	position:absolute;
+	top:-50px;
+	transform-style:preserve-3d;
+	perspective:1000px;
+	transition:all .5s;
+}
+
+#banner>div>div{
+	width:20%;
+	display:inline-block;
+	position:absolute;
+	
+}
+.banup{
+	left:0;
+	z-index:1;
+	transform:scale(1);
+	transition:left .7s .3s,
+				transform .3s 1s;
+}
+.banpre{
+	left:-20%;
+	z-index:-1;
+	transform:scale(0.7);
+
+	transition:left .7s .3s,
+				transform .3s;
+}
+.banpre1{
+	left:-40%;
+	z-index:-1;
+	transform:scale(0.7);
+}
+.bannext{
+	left:20%;
+	z-index:-1;
+	transform:scale(0.7);
+	transition:left .7s .3s,
+				transform .3s;
+}
+.bannext1{
+	left:40%;
+	z-index:-1;
+	transform:scale(0.7);
+}
+#banner>i{
+	display:block;
+	width:40px;
+	height:40px;
+	border:1px solid white;
+	position:absolute;
+	top:50%;
+	cursor:pointer;
+	z-index:10;
+}
+#banner>i:first-child{
+	left:2%;
+	position:absolute;
+}
+#banner>i>b{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	border-left:1px solid white;
+	border-bottom:1px solid white;
+	transform:rotate(45deg);
+	position:relative;
+	top:30%;
+	left:40%;
+}
+#banner>i:last-child>b{
+	border:none;
+	border-right:1px solid white;
+	border-top:1px solid white;
+	left:25%;
+}
+#banner>i:last-child{
+	right:2%;
+	position:absolute;
+}
+#banner .videoControls{
+	position:absolute;
+	right:9px;
+	bottom:95px;
+}
+#banner .videoControls>img{
+	width:30px;
+	height:30px;
+	margin-right:50px;
+	cursor:pointer;
+}
+#banner .videoControls>span{
+	font-size:60px;
+	position:absolute;
+	left:-3px;
+	top:-30px;
+	color:#272636;
+	cursor:pointer;
+}
+#banner .videoControls>p{
+	position:absolute;
+	display:inline-block;
+	height:35px;
+	box-sizing:border-box;
+	width:35px;
+	right:0;
+	bottom:-3px;
+	border:1px solid #272636;
+	color:#272636;
+	font-size:12px;
+	cursor:pointer;
+	font-weight:bold;
+}
+#banner .videoControls>p>b{
+	position:absolute;
+	transition:all .3s;
+}
+#banner .videoControls>p>b.larr{
+	position:absolute;
+	left:0px;
+	top:5px;
+}
+#banner .videoControls>p:hover>b.larr{
+	left:-5px;
+}
+#banner .videoControls>p>b.rarr{
+	position:absolute;
+	left:15px;
+	top:5px;
+}
+#banner .videoControls>p:hover>b.rarr{
+	left:20px;
+}
+
+#banner .videoControls>p>b.uarr{
+	position:absolute;
+	left:13px;
+	top:0;
+}
+#banner .videoControls>p:hover>b.uarr{
+	top:-5px;
+}
+#banner .videoControls>p>b.darr{
+	position:absolute;
+	left:13px;
+	top:13px;
+}
+#banner .videoControls>p:hover>b.darr{
+	top:18px;
+}
+#topSale>p{
+	font-size:20px;
+	color:white;
+	margin:50px 0 50px 30px;
+}
+.flexDiv{
+	display:flex;
+	background:white;
+}
+#topSaleFlex>div{
+	width:470px;
+	height:590px;/*无响应式*/
+	border:5px solid transparent;
+	overflow:hidden;
+}
+#topSaleFlex>div:hover{
+	border:5px solid #C7CCD0;
+}
+#topSaleFlex>div img{
+	width:100%;
+	transition:all 1.5s linear;
+}
+#topSaleFlex>div img:hover{
+	transform:scale(1.2);
+}
+.topSaleStyle,.topSaleNumber,.knowDetails{
+	text-align:center;
+	margin-top:-50px;
+	position:relative;
+}
+.topSaleStyle,.topSaleNumber{
+	font-size:13px;
+	color:#84888B;
+}
+.topSaleStyle a,.topSaleNumber a{
+	color:#84888B;
+}
+.topSaleNumber{
+	bottom:13px;
+}
+.knowDetails{
+	margin-top:5px;
+}
+.knowDetails a{
+	color:#002842;
+}
+#topSale>p:last-child a{
+	font-size:15px;
+	color:white;
+}
+#search{
+	display:flex;
+	position:relative;
+}
+#search>div{
+	overflow:hidden;
+	width:50%;
+	height:300px;
+}
+#search img{
+	width:100%;
+	transition:all 1.5s linear;
+}
+#search img:hover{
+	transform:scale(1.2);
+}
+#searchDream,#searchBusiness{
+	position:absolute;
+	bottom:35%;
+	color:white;
+	text-align:center;
+}
+#searchDream{
+	left:18%;
+	font-size:25px;
+}
+#searchBusiness{
+	left:68%;
+	font-size:33px;
+}
+section{
+	width:87%;
+	margin:0 auto;
+}
+#news>p{
+	margin:50px 0 20px 30px;
+}
+#news>p>a{
+	color:white;
+	
+}
+#news>div>div{
+	width:66.6%;
+}
+.overDiv{
+	position:relative;
+}
+.overDiv>img{
+	width:100%;
+	z-index:0;
+}
+.overDiv>div{
+	background:black;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	left:0;
+	z-index:10;
+	opacity:0.6;
+}
+.overDiv>div:hover{
+	opacity:0;
+}
+.overDiv~p{
+	margin-left:30px;
+}
+
+a .newsTitle{
+	color:#BAC5CC;
+	font-size:12px;
+	margin-top:50px;
+}
+a .newsDetails{
+	color:black;
+	font-size:25px;
+}
+a .newsTime{
+	color:#BAC5CC;
+	font-size:12px;
+	margin-top:50px;
+	margin-bottom:40px;
+}
+.newsTime1{
+	margin-top:115px !important;
+}
+#readTotalNews{
+	width:100%;
+	/*height:100px;*/
+	box-sizing:border-box;
+	padding:40px 30px;
+	background:#003150;
+}
+#readTotalNews>p>a{
+	color:white;
+	font-size:15px;
+}
+#spokesPerson{
+	width:100%;
+	position:relative;
+	margin-bottom:80px;
+	overflow:hidden;
+}
+#person{
+	width:66.66%;
+	overflow:hidden;
+	position:relative;
+}
+#personDiv{
+	width:300%;
+	display:flex;
+	transition:all .5s;
+	position:relative;
+}
+#person>div img{
+	width:100%;
+}
+#spokesPerson>div>a>div>div{
+	height:100%;
+	width:33.33%;
+	background-size:100% auto !important;
+	background-position:0 35% !important;
+	position:absolute;
+	right:0;
+	top:0;
+}
+#spokesPerson>div>a>div>div:first-child{
+	background:white url('../img/spokesperson/11.jpg') no-repeat;
+}
+#spokesPerson>div>a>div>div:nth-child(2){
+	background:white url('../img/spokesperson/22.jpg') no-repeat;
+}
+#spokesPerson>div>a>div>div:last-child{
+	background:white url('../img/spokesperson/33.jpg') no-repeat;
+}
+#spokesPerson>div>a>div>div{	
+/*	display:none;*/
+	opacity:0;
+	z-index:0;
+	transition:all .8s linear;
+}
+#spokesPerson>div>a>div>div>div{
+	display:inline-block;
+	position:absolute;
+	bottom:20%;
+	right:40%;
+}
+a .lqxl{
+	color:black;
+}
+#personDiv>a{
+	position:relative;
+}
+#personDiv>a>p{
+	color:white;
+	font-size:50px;
+	position:absolute;
+	bottom:25%;
+	left:8%;
+	text-shadow:0 0 10px #000;
+}
+#personDiv>a>span{
+	color:white;
+	font-size:20px;
+	position:absolute;
+	bottom:10%;
+	left:8%;
+	display:block;
+	text-shadow:0 0 10px #000;
+}
+.show{
+	opacity:1 !important;
+	z-index:1 !important;
+}

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/shoppingcart.css">
+	</head>
+	<body>
+	  <div>
+		<header id="header"></header>
+		<div class="shoptitle">
+			<a href="homePage.html">主页</a>	/
+			<a href="">购物袋</a>
+		</div>	
+		<div class="shoptitleTwo">
+			<h1>我的购物车<span data-shop="count2"></span></h1>
+			<p><img src="img/shop/1.png" alt="">安全购物保障</p>
+			<a href="product.html">继续购物	<b>&rarr;</b></a><br>
+			<a class="goonpay">结算支付	<b>&rarr;</b></a>
+		</div>
+		
+		<div class="shopmain">
+			<div class="shopleftdiv fl" data-shop="parent">
+				<h2 data-shop="count3">您的购物车为空</h2><!--1腕表-->
+				<span class="hasthing">在我的购物车中</span>
+				<div data-shop="youwin"></div>
+				<!--<div class="shopcartproduct">
+					<img src="img/shop/2.png" alt="">
+					<span>浪琴表名匠系列</span>
+					<span class="cartnubmer">L2.628.4.78.6</span>
+					<ul>
+						<li>
+							<span class="line1">数量</span><br>
+							<select name="" id="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</li>
+						<li>
+							<span class="line1">表带尺寸(厘米)</span><br>
+							<span>13</span>
+						</li>
+						<li>
+							<span class="line1">价格</span><br>
+							<span>￥15,400.00</span>
+						</li>
+						<li>
+							<span class="line1">小计</span><br>
+							<b>￥15,400.00</b>
+						</li>
+					</ul>
+
+					<span class="removespan"><b>×</b>移除</span>
+				</div>
+				<div class="shopcartproduct">
+					<img src="img/shop/2.png" alt="">
+					<span>浪琴表名匠系列</span>
+					<span class="cartnubmer">L2.628.4.78.6</span>
+					<ul>
+						<li>
+							<span class="line1">数量</span><br>
+							<select name="" id="">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</li>
+						<li>
+							<span class="line1">表带尺寸(厘米)</span><br>
+							<span>13</span>
+						</li>
+						<li>
+							<span class="line1">价格</span><br>
+							<span>￥15,400.00</span>
+						</li>
+						<li>
+							<span class="line1">小计</span><br>
+							<b>￥15,400.00</b>
+						</li>
+					</ul>
+
+					<span class="removespan"><b>×</b>移除</span>
+				</div>
+				<a class="goonpay goonpay2" >结算支付	<b>&rarr;</b></a>-->
+				<p data-shop="child">推荐商品</p>
+				
+				<div class="recommend">
+					<div class="commendOne fl">
+						<div>
+							<img src="img/product_img/max8.jpg" alt="" class="fl">
+							<span>浪琴表名匠系列</span><br>
+							<span>L2.142.0.72.4</span>
+							<p>￥12,600.00</p>
+							<a href="javascript:addcart1(8)">加入购物车</a>
+						</div>
+						
+					</div>
+					<div  class="commendtwo fl">
+						<div>
+							<img src="img/product_img/max5.jpg" alt="" class="fl">
+							<span>浪琴表名匠系列</span><br>
+							<span>L2.142.0.72.1</span>
+							<p>￥22,600.00</p>
+							<a href="javascript:addcart1(5)">加入购物车</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="shoprightdiv fr">
+				<h3>订单详情</h3>
+				<p class="mincount">小计<span  data-shop="totalprice">￥0.00</span></p>
+				<p class="midcount">配送<span>免费</span></p>
+				<p class="totalcount">总计<span  data-shop="totalprice2">￥0.00</span></p>
+				
+				<ul>
+					<li class="shopRightTitle">免费送货</li>
+					<li>免费，快速，安全配送</li>
+					<li class="shopRightTitle">电子发票</li>
+					<li>浪琴使用电子发票，您可以参阅使用说明，在包裹内获得您的电子发票提取码，然后获取您的电子发票</li>
+					<li class="shopRightTitle">帮助</li>
+					<li><img src="img/shop/4.png" alt="">400-821-3270</li>
+					<li class="shopRightTitle">安全付款</li>
+					<li>支付方式</li>
+					<li><img src="img/shop/5.png" alt=""></li>
+				</ul>
+				
+
+			</div>
+		
+		
+		</div>
+
+
+		<footer id="footer"></footer>
+	  </div>
+
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/shoppingcart.js"></script>
+	</body>
+</html>

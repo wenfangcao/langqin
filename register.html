@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+  <div>
+	<header id="header"></header>
+	<section>
+		<div>
+			<h1>账户注册使用手机号 <a href="registeremail.html"><span>使用电子邮箱注册</span></a></h1>
+			
+			<span>*姓名</span><br>
+			<input type="text" class="inputdemo1" data-target="d1"><br>
+			<div class="mustdiv" id="d1">必填项</div>
+
+			<span>*性别</span><br>
+			<select data-target="d2">
+				<option value=""></option>
+				<option value="1">男</option>
+				<option value="2">女</option>
+				<option value="0">不公开</option>
+			</select><br>
+			<div class="mustdiv" id="d2">必填项</div>
+			
+			<span>*手机<br>若通过手机号注册，浪琴将通过短 信与您联系</span><br>
+			<input type="text" class="inputdemo1" data-target="d3"><br>
+			<div class="mustdiv" id="d3">必填项</div>
+
+			<span>*请输入验证码</span><br>
+			<input type="text" class="inputdemo2" data-target="d4">
+			<div class="yzmdiv" title="看不清？点击刷新！">
+				<img src="data/routes/users/yzm.php" alt="">
+			</div><br>
+			<div class="mustdiv" id="d4">必填项</div>
+
+			<span>*手机验证码</span><br>
+			<input type="text" class="inputdemo2" data-target="d5" id="phonecode">
+			<button class="btn1" data-target="phonecode">获取验证码</button><br>
+			<div class="mustdiv" id="d5">必填项</div>
+
+			<span>*密码</span><span class="spanright">*确认密码</span><br>
+			<input type="password" class="inputdemo1" data-target="d6">
+			<input type="password" class="inputdemo1" data-target="d7"><br>
+			<div class="inlinediv mustdiv" id="d6">必填项</div>
+			<div  class="inlinediv spanright mustdiv" id="d7">必填项</div>
+			<br>
+
+			<span>*必填项</span><br>
+
+			<span class="read" data-target="d8"><i></i>我已阅读并同意 </span><a> 隐私政策</a><br>
+			<div class="mustdiv" id="d8">必填项</div>
+
+			<button class="bottombut" data-submit="submit">提交 <b>&rarr;</b></button>
+		</div>
+
+		<div>
+			<p class="welcome">欢迎</p>
+			<span>浪琴将为您呈精美时计,非凡品质及服<br>务.</span>
+			
+			<h2 class="userlogin">用户登录</h2>
+			<p class="islogined">已注册用户</p>
+			
+			<span>电子邮箱或手机号码</span><br>
+			<input type="text" class="rightinput"><br>
+
+			<span>密码</span><br>
+			<input type="text" class="rightinput"><br>
+
+			<a class="forgetpwd">忘记密码</a><br>
+
+			<button class="btnlogin">登录<span>&rarr;</span></button>
+
+			<p class="cooperatelogin">使用合作网站账号登录:</p>
+
+			<ul class="loginimgs">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<footer id="footer"></footer>
+  </div>
+
+	<script src="js/ajax.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#main{
+	height:800px;
+	margin-top:122px;
+	border-top:1px solid transparent;
+	font-size:16px;
+	/*position:relative;*/
+}
+#main li{
+	margin-top:15px;
+}
+#footer{
+	position:absolute;
+	top:950px;
+}

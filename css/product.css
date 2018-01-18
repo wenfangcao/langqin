@@ -1,0 +1,198 @@
+.title{
+	width:100%;
+	background:url('../img/product_img/title.jpg') no-repeat;
+	background-position:center;
+	height:700px;
+	color:white;
+	position:relative;
+}
+.title>p{
+	font-size:55px;
+	position:absolute;
+	top:44%;
+	left:10%;
+}
+.title>span,.title>a{
+	font-size:13px;
+	position:absolute;
+	top:60%;
+	left:10%;
+}
+.title>a{
+	top:70%;
+	color:white;
+}
+
+.main{
+	width:100%;
+	background:#EFF1F3;
+	padding-bottom:5%;
+	position:relative;
+}
+.main>span{
+	display:inline-block;
+	margin:3%;
+}
+.main>span:first-child>a{
+	font-size:13px;
+	color:#003150;	
+}
+.main>span:first-child>a:not(:last-child):hover{
+	text-decoration:underline;
+}
+.main>b{
+	display:inline-block;
+	width:45px;
+	height:45px;
+	background:white;
+	text-align:center;
+	padding:5px;
+	box-sizing:border-box;
+	font-size:25px;
+}
+.main>b:hover{
+	color:white;
+	background:#003150;
+	cursor:pointer;
+}
+.main>.seldiv{
+	margin:2% 10%;
+	position:relative;color:#003150;
+}
+.main>.seldiv>select{
+	display:inline-block;
+	width:160px;
+	height:55px;
+	border:1px solid #C7CCD0;
+	padding:15px 20px;
+	margin:0 20px;
+	color:#003150;
+	outline:none;
+}
+.main>.seldiv>select>option{
+	background:white;
+	color:#003150;
+	font-size:16px;
+}
+.main>.seldiv>select:hover{
+	color:white;
+	background:#003150;
+}
+
+.main>.seldiv>span:last-child{
+	display:inline-block;
+	background:white url('../img/product_img/selectprice.png') no-repeat;
+	background-position:50% 50%;
+	width:45px;
+	height:45px;
+	position:absolute;
+	right:-30%;
+	top:10%;
+}
+.main>.seldiv>span:last-child:hover{
+	background:#003150 url('../img/product_img/selectprice2.png') no-repeat;
+	background-position:50% 50%;
+	cursor:pointer;
+}
+.main>.productShow{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin:2% 0;
+}
+.main>.productShow>div{
+	width:30%;
+	height:590px;/*无响应式*/
+	border:5px solid transparent;
+	overflow:hidden;
+	padding-bottom:3%;
+	background:white;
+	position:relative;
+	margin:10px;
+}
+.main>.productShow>div:hover{
+	border:5px solid #C7CCD0;
+}
+.main>.productShow>div>a>img{
+	width:100%;
+	transition:all 1.5s linear;
+}
+.main>.productShow>div>a>img:hover{
+	transform:scale(1.2);
+}
+.productStyle,.productNumber,.productPrice{
+	text-align:center;
+	margin-top:-57px;
+	position:relative;
+}
+.productStyle,.productNumber{
+	font-size:16px;
+	color:#84888B;
+}
+.productStyle a,.productNumber a{
+	color:#84888B;
+}
+.productNumber{
+	bottom:13px;
+}
+.productPrice{
+	margin-top:5px;
+	font-size:20px;
+}
+.productPrice a{
+	color:#002842;
+}
+.main>.productShow>div>a:not(:first-child){
+	display:block;
+	position:absolute;
+	right:-20%;
+	top:2%;
+	width:80px;
+	height:40px;
+	border:1px solid #C7CCD0;
+	background:white url('../img/product_img/hover1.png') no-repeat 40% 20%;
+	background-size:55%;
+	text-align:center;
+	padding-top:8%;
+	color:#003150;
+	transition:all .2s ease-in-out .1s;
+	opacity:0;
+}
+.main>.productShow>div>a:not(:first-child):hover{
+	background:#003150 url('../img/product_img/hover2.png') no-repeat 40% 20%;
+	background-size:55%;
+	color:white;
+}
+.main>.productShow>div>a:last-child{
+	top:20%;
+	background:white url('../img/product_img/selectprice.png') no-repeat 40% 20%;
+	background-size:55%;
+	transition:all .2s ease-in-out .2s;
+}
+.main>.productShow>div>a:last-child:hover{
+	background:#003150 url('../img/product_img/selectprice2.png') no-repeat 40% 20%;
+	background-size:55%;
+}
+.main>.productShow>div:hover>a:not(:first-child){
+	right:2%;
+	opacity:1;
+}
+.pronext{
+	position:absolute;
+	right:10%;
+}
+.pronext>a{
+	display:inline-block;
+	padding:0 8px;
+	color:#003150;
+}
+.outi{
+	display:block;
+	width:30px;
+	height:30px;
+	border:1px solid #003150;
+	position:absolute;
+	right:375px;
+	bottom:53px;
+	transition:all .3s ease-out .2s;
+}

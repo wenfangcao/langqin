@@ -1,0 +1,267 @@
+.shoptitle{
+	width:100%;
+	height:60px;
+	margin-top:121px;
+	background:#EFF1F3;
+	padding:20px 100px;
+	box-sizing:border-box;
+}
+.shoptitle>a{
+	color:#003150;
+}
+.shoptitleTwo{
+	width:100%;
+	height:150px;
+	background:white;
+	padding:20px 100px;
+	box-sizing:border-box;
+	position:relative;
+}
+h1{
+	color:#003150;
+	font-weight:400;
+	font-size:40px;
+	margin-bottom:10px;
+}
+.shoptitleTwo>a{
+	position:absolute;
+	right:5%;
+	display:block;
+	padding:20px 30px;
+	width:200px;
+	height:60px;
+	box-sizing:border-box;
+	background:white;
+	border:1px solid #003150;
+	bottom:30%;
+	color:#003150;
+}
+.shoptitleTwo>a.goonpay{
+	right:20%;
+	background:#003150;
+	color:white;
+}
+
+.shoptitleTwo>a>b{
+	position:absolute;
+	right:10%;
+}
+.shoptitleTwo>a:hover{
+	background:#003150;
+	color:white;
+}
+.shoptitleTwo>a.goonpay:hover{
+	background:white;
+	color:#003150;
+}
+.shopmain{
+	padding:60px 110px;
+	background:#EFF1F3;
+	color:#003150;
+}
+.shopmain:after,.recommend>div:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.shopmain>.shopleftdiv{
+	width:66.66%;
+}
+.shopmain>.shoprightdiv{
+	width:33.33%;
+	border-left:1px solid #B7BFC6;
+	box-sizing:border-box;
+	padding:0 0 300px 50px;
+}
+.shopmain>.shopleftdiv>h2{
+	font-weight:400;
+}
+.shopmain>.shopleftdiv>p{
+	margin:100px 0 30px;
+}
+.recommend{
+	width:90%;
+}
+.recommend>div{
+	position:relative;
+	width:45%;
+	padding:30px;
+	background:white;
+	box-sizing:border-box;
+	cursor:pointer;
+}
+.recommend>div:first-child{
+	margin-right:10px;
+}
+.recommend>div>div>img{
+	width:30%;
+	margin-right:50px;
+	position:relative;
+	transition:all 1s;
+	top:0px;
+	z-index:1;
+}
+.recommend>div>div:after{
+	content:"";
+	display:block;
+	width:20px;
+	height:20px;
+	background:radial-gradient(circle,#000,#fff);
+	transform:rotateX(80deg);
+	position:absolute;
+	left:17%;
+	bottom:40px;
+	z-index:2;
+	transition:all 1s;
+	opacity:0.6;
+}
+.recommend>div:hover>div:after{
+	width:35px;
+	height:35px;
+	left:15%;
+}
+.recommend>div:hover>div>img{
+	top:-20px;
+}
+.recommend>div>div>span{
+	color:#8F9395;
+	font-size:14px;
+	font-weight:800;
+	margin-top:5px;
+	display:inline-block;
+}
+.recommend>div>div>p{
+	margin-top:15px;
+	font-size:20px;
+}
+.recommend>div>div>a{
+	display:inline-block;
+	padding:10px 25px;
+	width:140px;
+	height:50px;
+	box-sizing:border-box;
+	background:#003150;
+	border:1px solid #003150;
+	bottom:30%;
+	color:#F5F7F8;
+	margin-top:20px;
+}
+.recommend>div>div>a:hover{
+	background:white;
+	color:#003150;
+}
+.shopleftdiv>.hasthing{
+	position:relative;
+	top:10px;
+	color:#989B9E;
+}
+.shopleftdiv>div{
+	position:relative;
+}
+.shopleftdiv>div>.shopcartproduct{
+	width:80%;
+	background:white;
+	position:relative;
+	height:250px;
+	top:50px;
+	margin-top:30px;
+}
+.shopleftdiv>div>.shopcartproduct::after{
+	content:"";
+	display:block;
+	width:20px;
+	height:20px;
+	background:radial-gradient(circle,#000,#fff);
+	transform:rotateX(80deg);
+	position:absolute;
+	left:12.8%;
+	bottom:40px;
+	z-index:1;
+	transition:all .5s;
+	opacity:0.6;
+}
+.shopleftdiv>div>.shopcartproduct:hover:after{
+	width:35px;
+	height:35px;
+	left:12%;
+	bottom:30px;
+}
+.shopleftdiv>div>.shopcartproduct>img{
+	width:13%;
+	position:absolute;
+	top:10%;
+	left:8%;
+	transition:all .5s;
+}
+.shopleftdiv>div>.shopcartproduct:hover>img{
+	top:6%;
+}
+.shopleftdiv>div>.shopcartproduct>span{
+	position:absolute;
+	left:30%;
+	top:15%;
+	color:#8E9294;
+}
+.shopleftdiv>div>.shopcartproduct>span.cartnubmer{
+	top:25%;
+}
+.shopleftdiv>div>.shopcartproduct>span.removespan{
+	top:80% !important;
+	left:90% !important;
+	cursor:pointer;
+}
+.shopleftdiv>div>.shopcartproduct>ul{
+	list-style:none;
+	position:absolute;
+	left:30%;
+	top:45%;
+}
+.shopleftdiv>div>.shopcartproduct>ul>li{
+	float:left;
+	margin-right:20px;
+}
+.shopleftdiv>div>.shopcartproduct>ul>li>span.line1{
+	color:#9FA2A5;
+	margin-bottom:10px;
+	display:inline-block;
+}
+.shopleftdiv>div>.shopcartproduct>ul select{
+	width:60px;
+	height:30px;
+	padding-left:10px;
+}
+
+.shoprightdiv>ul{
+	list-style:none;
+}
+.shoprightdiv>ul>li{
+	color:#84888B;
+	font-size:16px;
+}
+.shoprightdiv>ul>li.shopRightTitle{
+	font-weight:bold;
+	font-size:18px;
+	margin:30px 0 10px;
+}
+.shoprightdiv>ul>li:last-child{
+	margin-top:10px;
+}
+.shoprightdiv>h3{
+	color:#898D8F;
+	font-size:25px;
+	margin-bottom:30px;
+}
+.mincount,.totalcount{
+	background:#E6EAED;
+	padding:10px 15px;
+}
+.shoprightdiv>p{
+	position:relative;
+}
+.shoprightdiv>p>span{
+	position:absolute;
+	right:5px;
+}
+.midcount{
+	padding:10px 15px;
+}
