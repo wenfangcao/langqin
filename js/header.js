@@ -10,6 +10,7 @@
 		listfun();
 		seesaw();
 		setTimeout(getshoppingcart,100);
+		payFun();
 	});
 })();
 
@@ -621,5 +622,22 @@ function priceToThousands(num){
 	if(num){
 		result = num + result+".00";
 		return result;
+	}
+}
+
+
+//支付页面
+function payFun(){
+	var payBtns = document.querySelectorAll("[data-target='pay']");
+	var hoverDiv = document.querySelector('.hoverPayDiv');
+	var close = document.querySelector('.hoverPayDiv .hoverDivClose');
+	console.log(close);
+	for(var btn of payBtns){
+		btn.onclick=()=>{
+			hoverDiv.style.height = "100%";
+		}
+	}
+	close.onclick=()=>{
+		hoverDiv.style.height = "0";
 	}
 }

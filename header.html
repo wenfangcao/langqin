@@ -8,7 +8,6 @@
 	</div>
 </div>
 
-
 <div class="login">
 	<div class="fl creatediv">
 		<b>我的帐号</b><br>
@@ -26,25 +25,24 @@
 		<span data-span="pwd">必填项</span><br>
 		<button> 登录<b>&rarr;</b></button><br>
 		<div data-input="legal">请输入有效的用户名与密码</div>
-		<a>忘记密码</a>
+		<a data-target='pay'>忘记密码</a>
 	</div>
 
 	<div class="fl loginrightdiv">
 		<p>使用合作网站帐号登录</p>
-		<a class="logina1">微信登录</a><br>
-		<a class="logina2">微博登录</a><br>
-		<a class="logina3">QQ登录</a>
+		<a class="logina1" data-target='pay'>微信登录</a><br>
+		<a class="logina2" data-target='pay'>微博登录</a><br>
+		<a class="logina3" data-target='pay'>QQ登录</a>
 	</div>
 	<b>×</b>
 </div>
 
-
 <div class="self_adaption">
 	<a data-div="servebtn" class="servebtn"><span>客户服务</span><i></i></a>
 	<div class="fr">
-		<a  class="headerimg"><span>400-123-6789</span></a>
+		<a  class="headerimg"><span data-target='pay'>400-123-6789</span></a>
 		<a  class="headerimg" data-target="comparediv">
-			<span>表款比较</span>
+			<span data-target='pay'>表款比较</span>
 			
 			<div class="comparediv1" id="comparediv">
 				<p>腕表比较为空</p>
@@ -268,5 +266,12 @@
 </div>
 </div>
 
-
 <div class="fugaiceng"></div>
+
+<div class="hoverPayDiv">
+	<div>
+		<p>支付后  开通功能！</p>
+		<img src="img/headnav/pay.png" alt="">
+	</div>
+	<div class="hoverDivClose">关闭<span>×</span></div>
+</div>
